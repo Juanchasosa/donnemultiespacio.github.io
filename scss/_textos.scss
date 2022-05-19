@@ -1,0 +1,177 @@
+@import "variables";
+
+/*EDITOR DE TEXTO*/
+.tituloPrincipal{
+    @include flex-row-center;
+    margin: 20px;
+    color: $verdeOscuro;
+    font-size: 10rem;
+    font-family: 'Parisienne', cursive;
+    font-weight: 900;
+
+}
+
+@media (max-width:600px){
+    .tituloPrincipal{
+        font-size: 4rem;
+    }
+}
+
+.tituloPrincipal2{
+    margin-top: 25px;
+    color: black;
+    font-size: 6rem;
+    font-family: $tipografia;
+    text-align: center;
+}
+
+@media (max-width:600px){
+    .tituloPrincipal2{
+        font-size: 2rem;
+    }
+}
+
+
+.fancy-undeline {
+    background-image: linear-gradient(120deg, #77A1D3,#79CBCA,#E684AE 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.1em;
+    background-position: 0 100%;
+    transition: background-size 0.25s ease-in;
+}
+
+.fancy-undeline:hover {
+    background-size: 100% 88% !important;
+}
+
+
+p{
+    color: $colorParrafos;
+    padding: 5px 5px $espaciado 5px ;
+    font-size: 1.8rem;
+    width: 95%;
+    margin: auto;
+    text-align: justify;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;;
+    line-height: 1.5;
+
+}
+
+
+
+@media (max-width:600px){
+    p{
+        font-size: 1.4rem;
+    }
+}
+
+.link{
+    color: white;
+    @include flex-column-center;
+    text-decoration: none;
+}
+
+a{
+    font-family: 'Monserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 5px;
+
+}
+
+@media (max-width:600px){
+    a{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+.link:hover{
+    color: $verdeOscuro;
+}
+
+
+
+.hipervinculos{
+    display: inline;
+    text-decoration: underline $colorParrafos;
+    color:$colorParrafos;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+
+}
+
+.hipervinculos:hover{
+    color: black;
+}
+
+@media (max-width:600px){
+    .hipervinculos{
+        font-size: 1.4rem;
+    }
+}
+
+.subtitulo{
+    padding: 15px;
+    color: $colorSubtitulo;
+    font-size: 2.5rem;
+    font-family: $tipografia;
+}
+
+@media (max-width:600px){
+    .subtitulo{
+        font-size: 2rem;
+    }
+}
+
+
+.subtitulo2{
+    padding-bottom: $espaciado;
+    margin: 0 auto;
+    color: black;
+    font-size: 1.8rem;
+    font-family: $tipografia;
+    width: 95%;
+
+}
+
+@media (max-width:600px){
+    .subtitulo2{
+        font-size: 1.5rem;
+    }
+}
+
+
+.subtitulo3{
+    padding-bottom: $espaciado;
+    color: $colorSubtitulo;
+    font-size: 2rem;
+    font-family: $tipografia;
+    margin: 0 auto;
+    width: 95%;
+
+}
+
+@media (max-width:600px){
+    .subtitulo3{
+        font-size: 1.7rem;
+    }
+}
+
+
+.tooltip{
+    font-size: 1.5rem;
+    
+}
+
+.definicion{
+    color: $colorParrafos;
+    font-weight: bold;
+}
+
+.definicion:hover{
+    text-decoration: underline;
+}
+
+
+/*EDITOR DE TEXTO*/

@@ -1,0 +1,239 @@
+@import "variables";
+@import "textos";
+@import "imagenes";
+
+html{
+    font-size: 62.5%;
+}
+
+/*BARRA DE NAVEGACIÓN*/
+
+.logoNav{
+    width: 80px;
+}
+
+.barraNavegacion{
+    background-color: $celesteDonne;
+    @include bordesHorizontales($verdeOscuro, 2px);
+    z-index: 1;
+    width: 100%;
+
+}
+
+@media (min-width: 601px) and (max-width: 991px){
+    .navbar-nav{
+        align-items: center
+    }
+}
+
+
+/*BARRA DE NAVEGACIÓN*/
+
+/*SECCIONES*/
+
+header{
+    @include flex-column-center;
+    background-color: $rosaDonne;
+    
+    .logo{
+        width: 300px;
+        padding-bottom: 15px;
+    }
+    @media (max-width:600px){
+        .logo{
+            width: 150px;
+            padding-bottom: 10px;
+        }
+    }
+}
+
+.subir{
+    padding: 0.2rem;
+    position: fixed;
+    bottom: 1rem;
+    right:1rem;
+    border-radius: 50%;
+    background-color: #dad8d8;
+}
+
+
+section{
+    width: 100%;
+    @include flex-column-center;
+    margin-top: 20px;
+}
+
+.facial{
+    @include flex-column-center;
+    @include bordesHorizontales (black, 1px);
+    margin-top: 10px;
+  
+}
+
+@media(max-width:600px){
+    .facial{
+        flex-direction: column;
+     }
+    
+        
+}
+
+.corporal{
+    @extend .facial;
+    margin-bottom: 5px;
+    
+}
+
+footer{
+    background-color: $celesteDonne;
+    padding: 10px ;
+    @include bordesHorizontales($verdeOscuro, 2px);
+}
+
+footer h4{
+    font-size: 16px;
+    bottom: 0;
+}
+
+
+
+.redesSociales{
+    border-radius: 2%;
+    padding: 10px;
+    width: 30%;
+    @include flex-column-center;
+    background-color: black;
+}
+
+@media (min-width: 601px) and (max-width: 1023px){
+    .redesSociales{
+        width: 50%;
+    }
+}
+
+@media (max-width:600px){
+    .redesSociales{
+        width: 80%;
+    }
+}
+
+
+/*SECCIONES*/
+
+/*UBICACIÓN*/
+
+
+.ubicacion{
+    margin: 15px auto;
+    width: 80%;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-items: start;
+    grid-template-areas: "titulo" "mapa";
+    background-color: $rosaDonne;
+
+}
+
+@media (max-width:600px){
+    .ubicacion{
+        @include flex-column-center;
+    }
+}
+
+.ubicacion__titulo{
+    grid-area: titulo;
+    color: black;
+    font-family: Roboto;
+    font-size: 4rem;
+}
+
+
+.ubicacion__mapa{
+    width: 100%;
+}
+
+@media (max-width:600px){
+    .ubicacion__mapa{
+        height: 275px;
+    }
+}
+
+/*UBICACIÓN*/
+
+
+/* PÁGINA TRATAMIENTOS CORPORALES Y FACIALES*/
+
+.tratamientos__contenedor{
+    display:grid;
+    grid-template-rows: auto;
+    justify-content:start;
+    justify-items:start;
+    width: 100%;
+}
+
+/* PÁGINA TRATAMIENTOS CORPORALES Y FACIALES*/
+
+.lista-tratamientos{
+    display: grid;
+    font-size: 1.8rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
+@media (max-width:600px){
+    .lista-tratamientos{
+        font-size: 1.4rem;
+    }
+}
+
+.asociados{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom:$espaciado*2;
+    justify-items: center;
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+    .asociados{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+}
+
+@media (max-width:768px){
+    .asociados{
+        grid-template-columns: 1fr ;
+        grid-template-rows: repeat(4,1fr) ;
+
+    }
+    
+}
+
+iframe{
+    width: 400px;
+    height: 501px;
+    border: solid black 1px;
+    margin: 5px;
+
+}
+
+@media (min-width: 769px) and (max-width: 1224px){
+    iframe{
+        width: 300px;
+
+
+    }
+}
+
+@media (max-width:600px){
+    iframe{
+        width: 300px;
+        border: none;
+
+
+    }
+
+} 
+
+

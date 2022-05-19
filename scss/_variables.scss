@@ -1,0 +1,31 @@
+$celesteDonne:#bafaea;
+$rosaDonne:#d7a9d8;
+$verdeOscuro: #22615a;
+$colorSubtitulo: #218377;
+$colorParrafos: #777777;
+$tipografia: 'Montserrat', sans-serif;;
+$tooltip-font-size:10px;
+$espaciado: 1.2rem;
+
+
+@mixin flex-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+@mixin bordesHorizontales ($color, $grosor) {
+    border-top: solid $color $grosor;
+    border-bottom: $color solid $grosor;
+}

@@ -1,0 +1,208 @@
+@import "variables";
+
+
+@media(max-width:600px){
+    svg{
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+
+}
+
+.iconify{
+    display: none;
+}
+
+@media (max-width:992px){
+    .iconify{
+        width: 3.6rem;
+        height: 3.6rem;
+        // font-size: 3.6rem;
+        display: inline;
+    }
+}
+
+/*IMAGENES*/
+.tratamientoFacial-index{
+    width: 500px;
+
+}
+
+@media(max-width:600px){
+
+    .tratamientoFacial-index{
+        width: 100%;
+    }
+
+}
+
+
+.tratamientoCorporal-index{
+    width: 35%;
+    order: 3;
+}
+
+@media(max-width:600px){
+
+    .tratamientoCorporal-index{
+        width: 100%;
+        order: 1;
+
+    }
+}
+
+
+.appSocial{
+    width: 100px;
+}
+
+@media (max-width:600px){
+    .appSocial{
+        width: 60px;
+    }
+}
+
+.carousel{
+    width: 62%;
+    margin: 50px auto;
+}
+
+@media (max-width:600px){
+    .carousel{
+        width: 100%;
+    }
+}
+
+/*IMAGENES PAGINA CORPORAL*/
+
+.parallax{
+    background: #fff fixed no-repeat 50% 50% ;
+    background-size: cover;
+    width: 100%;
+}
+
+@media (max-width:600px){
+    .parallax{
+        background-attachment: scroll;
+        
+    }
+}
+
+#imagenCorporal1{
+    width: auto;
+    height: 350px;
+    margin: 10px;
+    background-image: url(../img/tratamiento-reductor.webp);
+
+}
+@media (max-width:600px){
+    #imagenCorporal1{
+
+        height: 200px;
+    }
+}
+
+#imagenCorporal2{
+    @extend #imagenCorporal1;
+    background-image: url(../img/electroestimulacion.webp);
+}
+
+#imagenCorporal3{
+    @extend #imagenCorporal1;
+    background-image: url(../img/ultrasonido.webp);
+
+}
+
+#imagenCorporal4{
+    @extend #imagenCorporal1;
+    background-image: url(../img/masaje-piernas.webp);
+
+}
+
+#imagenCorporal5{
+    @extend #imagenCorporal1;
+    background-image: url(../img/drenaje-linfático.webp);
+
+}
+
+#imagenCorporal6{
+    @extend #imagenCorporal1;
+    background-image: url(../img/masoterapia.webp);
+
+}
+
+#imagenCorporal7{
+    @extend #imagenCorporal1;
+    background-image: url(../img/estrias.webp);
+
+}
+
+#imagenCorporal8{
+    @extend #imagenCorporal1;
+    background-image: url(../img/depilacion.webp);
+
+}
+
+#imagenCorporal9{
+    @extend #imagenCorporal1;
+    background-image: url(../img/radiofrecuencia.webp);
+
+}
+
+/*IMAGENES PAGINA CORPORAL*/
+
+
+/* PÁGINA TRATAMIENTOS FACIALES */
+
+#fotoFacial1{
+    @extend #imagenCorporal1;
+    background-image: url(../img/limpieza-facial.webp)
+}
+
+@media (max-width:600px){
+    #fotoFacial1{
+        height: 200px;
+    }
+}
+
+#fotoFacial2{
+    @extend #imagenCorporal1;
+    background-image: url(../img/lifting.webp)
+}
+
+#fotoFacial3{
+    @extend #imagenCorporal1;
+    background-image: url(../img/rosacea.webp)
+}
+
+#fotoFacial4{
+    @extend #imagenCorporal1;
+    background-image: url(../img/microdermabrasion.webp)
+}
+
+#fotoFacial5{
+    @extend #imagenCorporal1;
+    background-image: url(../img/anti-acne.webp)
+}
+
+#fotoFacial6{
+    @extend #imagenCorporal1;
+    background-image: url(../img/anti-age.webp)
+}
+
+#fotoFacial7{
+    @extend #imagenCorporal1;
+    background-image: url(../img/peeling.webp)
+}
+
+#fotoFacial8{
+    @extend #imagenCorporal1;
+    background-image: url(../img/puntos-negros.webp)
+}
+
+
+
+
+/* PÁGINA TRATAMIENTOS FACIALES */
+
+/*IMAGENES*/

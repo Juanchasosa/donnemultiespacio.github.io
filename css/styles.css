@@ -1,0 +1,522 @@
+@charset "UTF-8";
+/*EDITOR DE TEXTO*/
+.tituloPrincipal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  color: #22615a;
+  font-size: 10rem;
+  font-family: "Parisienne", cursive;
+  font-weight: 900;
+}
+
+@media (max-width: 600px) {
+  .tituloPrincipal {
+    font-size: 4rem;
+  }
+}
+.tituloPrincipal2 {
+  margin-top: 25px;
+  color: black;
+  font-size: 6rem;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .tituloPrincipal2 {
+    font-size: 2rem;
+  }
+}
+.fancy-undeline {
+  background-image: linear-gradient(120deg, #77A1D3, #79CBCA, #E684AE 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.1em;
+  background-position: 0 100%;
+  transition: background-size 0.25s ease-in;
+}
+
+.fancy-undeline:hover {
+  background-size: 100% 88% !important;
+}
+
+p {
+  color: #777777;
+  padding: 5px 5px 1.2rem 5px;
+  font-size: 1.8rem;
+  width: 95%;
+  margin: auto;
+  text-align: justify;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  p {
+    font-size: 1.4rem;
+  }
+}
+.link {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+a {
+  font-family: "Monserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 5px;
+}
+
+@media (max-width: 600px) {
+  a {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+.link:hover {
+  color: #22615a;
+}
+
+.hipervinculos {
+  display: inline;
+  text-decoration: underline #777777;
+  color: #777777;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+}
+
+.hipervinculos:hover {
+  color: black;
+}
+
+@media (max-width: 600px) {
+  .hipervinculos {
+    font-size: 1.4rem;
+  }
+}
+.subtitulo {
+  padding: 15px;
+  color: #218377;
+  font-size: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 600px) {
+  .subtitulo {
+    font-size: 2rem;
+  }
+}
+.subtitulo2 {
+  padding-bottom: 1.2rem;
+  margin: 0 auto;
+  color: black;
+  font-size: 1.8rem;
+  font-family: "Montserrat", sans-serif;
+  width: 95%;
+}
+
+@media (max-width: 600px) {
+  .subtitulo2 {
+    font-size: 1.5rem;
+  }
+}
+.subtitulo3 {
+  padding-bottom: 1.2rem;
+  color: #218377;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 auto;
+  width: 95%;
+}
+
+@media (max-width: 600px) {
+  .subtitulo3 {
+    font-size: 1.7rem;
+  }
+}
+.tooltip {
+  font-size: 1.5rem;
+}
+
+.definicion {
+  color: #777777;
+  font-weight: bold;
+}
+
+.definicion:hover {
+  text-decoration: underline;
+}
+
+/*EDITOR DE TEXTO*/
+@media (max-width: 600px) {
+  svg {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+}
+.iconify {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .iconify {
+    width: 3.6rem;
+    height: 3.6rem;
+    display: inline;
+  }
+}
+/*IMAGENES*/
+.tratamientoFacial-index {
+  width: 500px;
+}
+
+@media (max-width: 600px) {
+  .tratamientoFacial-index {
+    width: 100%;
+  }
+}
+.tratamientoCorporal-index {
+  width: 35%;
+  order: 3;
+}
+
+@media (max-width: 600px) {
+  .tratamientoCorporal-index {
+    width: 100%;
+    order: 1;
+  }
+}
+.appSocial {
+  width: 100px;
+}
+
+@media (max-width: 600px) {
+  .appSocial {
+    width: 60px;
+  }
+}
+.carousel {
+  width: 62%;
+  margin: 50px auto;
+}
+
+@media (max-width: 600px) {
+  .carousel {
+    width: 100%;
+  }
+}
+/*IMAGENES PAGINA CORPORAL*/
+.parallax {
+  background: #fff fixed no-repeat 50% 50%;
+  background-size: cover;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+#imagenCorporal1, #fotoFacial8, #fotoFacial7, #fotoFacial6, #fotoFacial5, #fotoFacial4, #fotoFacial3, #fotoFacial2, #fotoFacial1, #imagenCorporal9, #imagenCorporal8, #imagenCorporal7, #imagenCorporal6, #imagenCorporal5, #imagenCorporal4, #imagenCorporal3, #imagenCorporal2 {
+  width: auto;
+  height: 350px;
+  margin: 10px;
+  background-image: url(../img/tratamiento-reductor.webp);
+}
+
+@media (max-width: 600px) {
+  #imagenCorporal1, #fotoFacial8, #fotoFacial7, #fotoFacial6, #fotoFacial5, #fotoFacial4, #fotoFacial3, #fotoFacial2, #fotoFacial1, #imagenCorporal9, #imagenCorporal8, #imagenCorporal7, #imagenCorporal6, #imagenCorporal5, #imagenCorporal4, #imagenCorporal3, #imagenCorporal2 {
+    height: 200px;
+  }
+}
+#imagenCorporal2 {
+  background-image: url(../img/electroestimulacion.webp);
+}
+
+#imagenCorporal3 {
+  background-image: url(../img/ultrasonido.webp);
+}
+
+#imagenCorporal4 {
+  background-image: url(../img/masaje-piernas.webp);
+}
+
+#imagenCorporal5 {
+  background-image: url(../img/drenaje-linfático.webp);
+}
+
+#imagenCorporal6 {
+  background-image: url(../img/masoterapia.webp);
+}
+
+#imagenCorporal7 {
+  background-image: url(../img/estrias.webp);
+}
+
+#imagenCorporal8 {
+  background-image: url(../img/depilacion.webp);
+}
+
+#imagenCorporal9 {
+  background-image: url(../img/radiofrecuencia.webp);
+}
+
+/*IMAGENES PAGINA CORPORAL*/
+/* PÁGINA TRATAMIENTOS FACIALES */
+#fotoFacial1 {
+  background-image: url(../img/limpieza-facial.webp);
+}
+
+@media (max-width: 600px) {
+  #fotoFacial1 {
+    height: 200px;
+  }
+}
+#fotoFacial2 {
+  background-image: url(../img/lifting.webp);
+}
+
+#fotoFacial3 {
+  background-image: url(../img/rosacea.webp);
+}
+
+#fotoFacial4 {
+  background-image: url(../img/microdermabrasion.webp);
+}
+
+#fotoFacial5 {
+  background-image: url(../img/anti-acne.webp);
+}
+
+#fotoFacial6 {
+  background-image: url(../img/anti-age.webp);
+}
+
+#fotoFacial7 {
+  background-image: url(../img/peeling.webp);
+}
+
+#fotoFacial8 {
+  background-image: url(../img/puntos-negros.webp);
+}
+
+/* PÁGINA TRATAMIENTOS FACIALES */
+/*IMAGENES*/
+html {
+  font-size: 62.5%;
+}
+
+/*BARRA DE NAVEGACIÓN*/
+.logoNav {
+  width: 80px;
+}
+
+.barraNavegacion {
+  background-color: #bafaea;
+  border-top: solid #22615a 2px;
+  border-bottom: #22615a solid 2px;
+  z-index: 1;
+  width: 100%;
+}
+
+@media (min-width: 601px) and (max-width: 991px) {
+  .navbar-nav {
+    align-items: center;
+  }
+}
+/*BARRA DE NAVEGACIÓN*/
+/*SECCIONES*/
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #d7a9d8;
+}
+header .logo {
+  width: 300px;
+  padding-bottom: 15px;
+}
+@media (max-width: 600px) {
+  header .logo {
+    width: 150px;
+    padding-bottom: 10px;
+  }
+}
+
+.subir {
+  padding: 0.2rem;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  border-radius: 50%;
+  background-color: #dad8d8;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.facial, .corporal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: solid black 1px;
+  border-bottom: black solid 1px;
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .facial, .corporal {
+    flex-direction: column;
+  }
+}
+.corporal {
+  margin-bottom: 5px;
+}
+
+footer {
+  background-color: #bafaea;
+  padding: 10px;
+  border-top: solid #22615a 2px;
+  border-bottom: #22615a solid 2px;
+}
+
+footer h4 {
+  font-size: 16px;
+  bottom: 0;
+}
+
+.redesSociales {
+  border-radius: 2%;
+  padding: 10px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+@media (min-width: 601px) and (max-width: 1023px) {
+  .redesSociales {
+    width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .redesSociales {
+    width: 80%;
+  }
+}
+/*SECCIONES*/
+/*UBICACIÓN*/
+.ubicacion {
+  margin: 15px auto;
+  width: 80%;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  justify-items: start;
+  grid-template-areas: "titulo" "mapa";
+  background-color: #d7a9d8;
+}
+
+@media (max-width: 600px) {
+  .ubicacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.ubicacion__titulo {
+  grid-area: titulo;
+  color: black;
+  font-family: Roboto;
+  font-size: 4rem;
+}
+
+.ubicacion__mapa {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .ubicacion__mapa {
+    height: 275px;
+  }
+}
+/*UBICACIÓN*/
+/* PÁGINA TRATAMIENTOS CORPORALES Y FACIALES*/
+.tratamientos__contenedor {
+  display: grid;
+  grid-template-rows: auto;
+  justify-content: start;
+  justify-items: start;
+  width: 100%;
+}
+
+/* PÁGINA TRATAMIENTOS CORPORALES Y FACIALES*/
+.lista-tratamientos {
+  display: grid;
+  font-size: 1.8rem;
+  margin: 0 auto;
+  width: 90%;
+}
+
+@media (max-width: 600px) {
+  .lista-tratamientos {
+    font-size: 1.4rem;
+  }
+}
+.asociados {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 2.4rem;
+  justify-items: center;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .asociados {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+}
+@media (max-width: 768px) {
+  .asociados {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+iframe {
+  width: 400px;
+  height: 501px;
+  border: solid black 1px;
+  margin: 5px;
+}
+
+@media (min-width: 769px) and (max-width: 1224px) {
+  iframe {
+    width: 300px;
+  }
+}
+@media (max-width: 600px) {
+  iframe {
+    width: 300px;
+    border: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
